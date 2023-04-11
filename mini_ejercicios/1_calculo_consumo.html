@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>¿Alcohol o gasolina?</title>
+	</head>
+	<body>
+		<h3>¿Alcohol o gasolina?</h3>
+	</body>
+	<script>
+		let tanque = 40;
+		let km = 480;
+		let km1 = 300;
+		let saltoLinea = () => {
+			document.write("<br>");         
+		};
+
+		function calcularConsumo(tanque, km) {
+			let consumo = km / tanque;
+			return consumo;
+		}
+
+		let consumo = calcularConsumo(tanque, km);
+		console.log(consumo);
+		document.write(`El consumo de Gasolina es de  ${consumo}l. por los ${km}km. recorridos 🚗 `);
+
+		saltoLinea()
+
+		let consumo1 = calcularConsumo(tanque, km1);
+		document.write(`El consumo de Alcohol es de  ${consumo1}l. por los ${km1}km. recorridos 🚗`);
+
+		saltoLinea()
+
+		if (consumo > consumo1) {
+			document.write("El consumo de Alcohol es menor, por lo tanto es mejor usar Alcohol ✅");
+		} else {
+			document.write("El consumo de Gasolina es menor, por lo tanto es mejor usar Gasolina ✅");
+		}
+
+
+
+	</script>
+</html>

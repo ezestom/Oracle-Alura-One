@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+
+let inicio = confirm("Hola, quieres calcular la diferencia de edad entre Nico, Santi y Eze");
+
+if (inicio) {
+  let edadNico = prompt("¿Cuál es tu edad Nico?");
+  let edadSanti = prompt("¿Cuál es tu edad Santi?");
+  let edadEze = prompt("¿Cuál es tu edad Eze?");
+
+  function imprimirEdadDiferencia(edadNico, edadSanti, edadEze) {
+    let edadDiferenciaNS = calcularEdadDiferencia(edadNico, edadSanti);
+    let edadDiferenciaNE = calcularEdadDiferencia(edadNico, edadEze);
+    let edadDiferenciaSE = calcularEdadDiferencia(edadSanti, edadEze);
+    
+    document.write(`<big>La diferencia de edad entre Nico y Santi es de ${edadDiferenciaNS} años</big>`);
+    document.write("<br>");
+    document.write(`<big>La diferencia de edad entre Nico y Eze es de ${edadDiferenciaNE} años</big>`);
+    document.write("<br>");
+    document.write(`<big>La diferencia de edad entre Santi y Eze es de ${edadDiferenciaSE} años</big>`);
+  }
+  
+  function calcularEdadDiferencia(persona1, persona2) {
+    let edadDiferencia = persona1 - persona2;
+    return Math.abs(edadDiferencia); // se utiliza Math.abs para asegurarse de que la diferencia de edad sea siempre positiva
+  }
+
+  imprimirEdadDiferencia(edadNico, edadSanti, edadEze);
+
+} else {
+  document.write("Gracias por visitar la página");
+}
+
+
+
+
+
+</script>
+</html>
