@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>🚖</title>
+	</head>
+	<body></body>
+	<script>
+      document.write("<h1>Cuantos mundiales hubo hasta el año ... ⚽ </h1>");
+function saltarLinea() {
+    document.write("<br>");
+}
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+let anoMundial = 1930;
+let limite = parseInt(prompt("Ingrese el año para saber cuantos mundiales hubo hasta ese año"));
+
+while (anoMundial <= limite) {
+    imprimir("Hubo mundial en  " + anoMundial + " 🏆");
+    anoMundial += 4;
+}
+</script>
+</html>

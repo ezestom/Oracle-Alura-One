@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Familia Edades</title>
+</head>
+<body>
+   
+</body>
+<script>
+   document.write("<h1>Calcular la edad promedio de la familia 🧑👩‍🦰👶</h1>");
+   let numeroMiembros = parseInt(prompt("Ingrese la cantidad (en número) de los miembros de la familia"));
+   let contador = 1;
+   let totalEdades = 0;
+
+   while(contador <= numeroMiembros) {
+      let edad = parseInt(prompt("Ingrese la edad del miembro " + contador));
+      totalEdades += edad;
+      contador++;
+   }
+   document.write("La edad promedio de la familia es " + totalEdades / numeroMiembros);
+   
+
+</script>
+</html>

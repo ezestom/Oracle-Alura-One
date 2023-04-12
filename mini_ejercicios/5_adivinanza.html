@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Adiviná el Número 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟</title>
+</head>
+<body>
+   
+</body>
+<script>
+   document.write('<h1> Adiviná el Número entre 1️⃣ al 🔟 </h1>')
+   let numeroSecreto = parseInt(Math.round(Math.random()) * 10);
+   console.log(numeroSecreto);
+   let numero = parseInt(prompt("Adivine el numero secreto (entre 0 y 10)"));
+
+   if(numero == numeroSecreto){
+      document.write("Adivinaste el número secreto ✅");
+   }else{
+      document.write("No adivinaste el número secreto ❌");
+   }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>🚖</title>
+	</head>
+	<body></body>
+	<script>
+function saltarLinea() {
+    document.write("<br>");
+}
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+alert("Hola, vamos a ver si puedes conducir 🚗");
+var edad = parseInt(prompt("¿Cuál es tu edad? 🧑‍🎓"));
+
+if (edad < 18) {
+    imprimir("No puedes conducir porque eres menor de edad 🚫");
+} else if (edad >= 18 && edad <= 65) {
+    let tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+    if (tieneLicencia == "S" || tieneLicencia == "s") {
+        imprimir("Puedes conducir 🚗 adelante!");
+    } else if (tieneLicencia == "N" || tieneLicencia == "n") {
+        imprimir("No puedes conducir porque no tienes licencia 🚫");
+    } else {
+        imprimir("No puedes conducir porque no has respondido S o N 🚫");
+    }
+} else {
+    imprimir("No puedes conducir porque eres mayor de 65 años 🚫");
+}
+
+	</script>
+</html>

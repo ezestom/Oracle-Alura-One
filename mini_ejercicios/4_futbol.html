@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>futbol</title>
+</head>
+<body>
+   
+</body>
+
+<script>
+   document.write("<h1>Calculo de puntos de un equipo de fútbol</h1>");
+   function saltarLinea() {
+      document.write("<br>");	
+      document.write("<br>");	
+      document.write("<br>");	
+   }
+
+   function imprimir(frase) {
+      document.write(frase);
+      saltarLinea();
+   }
+
+   let victorias = parseInt(prompt("Ingrese la cantidad de victorias"))
+   let empates = parseInt(prompt("Ingrese la cantidad de empates"))
+   let puntosTotal = victorias * 3 + empates;
+
+   imprimir("El equipo tiene " + puntosTotal + " puntos");
+
+   if(puntosTotal > 30) {
+      imprimir("El equipo esta jugando mejor que la temporada pasada 🤩")
+   }else if(puntosTotal < 30) {
+      imprimir("El equipo esta jugando peor que la temporada pasada 🤦‍♂️")
+   }else{
+      imprimir("El equipo esta jugando igual que la temporada pasada 🤷‍♂️")
+   }   
+
+</script>
+</html>

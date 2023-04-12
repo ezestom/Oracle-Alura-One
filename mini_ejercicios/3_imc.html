@@ -10,6 +10,7 @@
    
 </body>
 <script>
+	document.write("<h1>Calculo de IMC</h1>");
 
 	function saltarLinea() {
 		document.write("<br>");	
@@ -32,7 +33,21 @@
 	
 	imcCalculado = calcularImc(pesoInformado,alturaInformado)
 
-	imprimir(nombre + ", su imc calculado es: " + imcCalculado);
+	// imprimir(nombre + ", su imc calculado es: " + imcCalculado);
+
+	if(imcCalculado < 18.5) {
+		imprimir("Usted tiene bajo peso");
+	}else if(imcCalculado >= 18.5 && imcCalculado <= 24.9) {
+		imprimir("Usted tiene peso normal");
+	}else if(imcCalculado >= 25 && imcCalculado <= 29.9) {
+		imprimir("Usted tiene sobrepeso");
+	}else if(imcCalculado >= 30 && imcCalculado <= 34.9) {
+		imprimir("Usted tiene obesidad grado 1");
+	}else if(imcCalculado >= 35 && imcCalculado <= 39.9) {
+		imprimir("Usted tiene obesidad grado 2");
+	}else{
+		imprimir("Usted tiene obesidad grado 3");
+	}
 
 </script>
 </html>
