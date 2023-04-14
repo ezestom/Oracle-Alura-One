@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>triangulo y escuadra</title>
+</head>
+<body>
+   <canvas width="600" height="400"></canvas>
+   <canvas class="canvas2" width="600" height="400"></canvas>
+</body>
+<script>
+   let pantalla = document.querySelector("canvas");
+   let pincel = pantalla.getContext("2d");
+   pincel.beginPath();   
+   pincel.moveTo(100,100);
+   pincel.lineTo(200,300);
+   pincel.lineTo(0,300);
+   pincel.closePath();
+   pincel.fill()
+
+   let pantalla2 = document.querySelector(".canvas2");
+   let pincel2 = pantalla2.getContext("2d");
+   pincel2.beginPath();
+   pincel2.moveTo(50,50)
+   pincel2.lineTo(50,400)
+   pincel2.lineTo(400,400)
+   pincel2.fill()
+
+   pincel2.fillStyle = "white"
+   pincel2.beginPath()
+   pincel2.moveTo(100,175)
+   pincel2.lineTo(100,350)
+   pincel2.lineTo(275,350)
+   pincel2.fill()
+
+</script>
+</html>
