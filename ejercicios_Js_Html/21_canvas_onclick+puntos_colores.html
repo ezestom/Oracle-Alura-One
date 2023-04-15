@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>onclick + punto</title>
+	</head>
+	<body>
+		<canvas width="600" height="400"></canvas>
+	</body>
+	<script>
+		let pantalla = document.querySelector("canvas");
+		let pincel = pantalla.getContext("2d");
+		pincel.fillStyle = "gray";
+		pincel.fillRect(0, 0, 600, 400);
+
+      let colores = ["blue", "red", "yellow", "orange", "black", "green", "purple"];
+      let indiceColorActual = 0; //comienza con blue
+
+		function exibirAlerta(e) {
+			let x = e.pageX - pantalla.offsetLeft;
+			let y = e.pageY - pantalla.offsetTop;
+			console.log(e);
+			alert("x: " + x + " y: " + y);
+		}
+
+		function dibujarPuntos(e) {
+			let x = e.pageX - pantalla.offsetLeft;
+			let y = e.pageY - pantalla.offsetTop;
+
+			pincel.fillStyle = colores[indiceColorActual] //paso el indice del color actual
+
+			pincel.beginPath();
+			pincel.arc(x, y, 10, 0, 2 * 3.14);
+			pincel.fill();
+			console.log(e);
+		}
+		pantalla.onclick = dibujarPuntos;
+      
+		function alterarColor() {
+         indiceColorActual++;
+         if(indiceColorActual >= colores.length){
+            indiceColorActual = 0;
+         }
+			return false;  //menú contextual padrón de `canvas` no sea exhibido
+		}
+		pantalla.oncontextmenu = alterarColor;
+
+	</script>
+</html>
