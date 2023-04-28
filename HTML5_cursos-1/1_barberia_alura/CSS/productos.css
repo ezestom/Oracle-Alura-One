@@ -9,7 +9,12 @@ body{
 	justify-content: space-between;
 }
 header {
-	background-color: #2b2e4a;
+	background-image: url(../img/tips-banner-desktop.jpg);
+	background-color: #0a0c21;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
 
 }
 
@@ -20,7 +25,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 ;
+	padding-top: 1% ;
 }
 h1{
 	display: grid;
@@ -34,6 +39,7 @@ h1 img{
 nav{
 	padding-right: 5%;
 	width: 100%;
+
 }
 nav ul{
 	list-style: none;
@@ -41,29 +47,33 @@ nav ul{
 	display: flex;
 	align-items: center;
 	justify-content: end;
+
 }
 nav ul li{
 	width: auto;
 	margin: 0 10px;
+	display: flex;
+	align-items: center;
 }
 nav a{
+	background-color: #0a0c21;
 	width: 100%;
 	color:#eeeeee ;
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 1.15rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
-	border: 2px solid transparent;
+	border: 2px solid #eeeeee;
 	border-radius: 10px;
-	padding: 5%;
+	padding: 5px;
 }
 
 
 nav a:hover{
-	color: #9030dd;
-	border: 2px solid #9030dd;
+	color: #f378ff;
+	border: 2px solid #f378ff;
 	border-radius: 10px;	
 }
 nav a:active{
@@ -93,10 +103,9 @@ nav a:active{
 }
 
 .productos li:hover{
-	border: 3px solid #9030dd;
-	transform: scale(1.03);
-	transition: all 0.1s ease-in-out;
-	color: #9030dd;	
+	border: 3px solid #f378ff;
+	transform: scale(1.02);
+	transition: all 0.2s ease-in-out;
 }
 .productos li:active{
 	border-color:#088c19;
@@ -137,24 +146,7 @@ footer img{
 }
 
 @media screen and (max-width: 641px){
-	.caja{
-		flex-direction: column;
-	}
-	nav{
-		padding: 0;
-	}
-	nav ul{
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		padding-left: 1%;
-	}
-	nav li{
-		padding: 1% 0;
-	}
-	nav a{
-		font-size: 18px;
-	}
+
 	.productos li{
 		width: 90%;
 		margin: 5%;
@@ -176,3 +168,25 @@ footer img{
 	}
 }
 	
+@media screen and (max-width: 1625px) {
+	.caja{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	nav{
+		padding: 0;
+	}
+	nav ul{
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-left: 1%;
+	}
+	nav li{
+		padding: .5% 0;
+	}
+	nav a{
+		font-size: 18px;
+	}
+	
+}
