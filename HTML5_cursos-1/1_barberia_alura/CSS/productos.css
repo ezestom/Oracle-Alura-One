@@ -60,3 +60,16 @@ nav a {
 	font-weight: bold;
 	margin-top: 10px;
 }
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+.productos li:hover {
+	border-color: #C78C19;
+}
+.productos li:active {
+	border-color: #088C19;    
+}
+.productos li:hover h2 {
+	font-size: 33px;
+}
