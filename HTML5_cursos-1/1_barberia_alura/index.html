@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="CSS/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Barberia Alura</title>
-	</head>
-	<body>
-		<header>
-			<h1 class="titulo-principal">Barbería Alura</h1>
-		</header>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="CSS/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./css/style-home.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+   <title>Barbería Alura</title>
+</head>
+<body>
+    <header>
+        <h1><img src="img/logo-blanco.png"></h1>
+        <div class="caja">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="ri-home-2-line"></i>Home</a></li>
+                    <li><a href="productos.html"><i class="ri-product-hunt-line"></i>Productos</a></li>
+                    <li><a href="contacto.html"><i class="ri-contacts-line"></i>Contacto</a></li>
+						  <li> <a href="#"><i class="ri-user-line"></i>Usuario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-		<img id="banner" src="./img/banner.jpg" />
+
+    <main>
 
 		<div class="principal">
-			<h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+			<h2 class="titulo-centralizado"><i class="ri-scissors-cut-fill"></i>Barbería Alura<i class="ri-scissors-cut-line"></i></h2>
 
 			<p>
 				Ubicada en el corazón de la ciudad, la
@@ -27,16 +40,14 @@
 			</p>
 
 			<p id="mision">
-				<em
-					>Nuestra misión es:
+				<em>Nuestra misión es:
 					<strong
 						>"Proporcionar autoestima y calidad de vida a nuestros
 						clientes"</strong
-					>.</em
-				>
+					>.</em>
 			</p>
 
-			<p>
+			<p class="ofrecemos">
 				Ofrecemos profesionales experimentados que están constantemente
 				observando los cambios y movimiento en el mundo de la moda, para
 				así ofrecer a nuestros clientes las últimas tendencias. El
@@ -46,16 +57,26 @@
 		</div>
 
 		<div class="diferenciales">
-			<h3 class="titulo-centralizado">Diferenciales</h3>
 
-			<ul>
-				<li class="items">Atención personalizada a los clientes</li>
-				<li class="items">Espacio diferenciado</li>
-				<li class="items">Localización</li>
-				<li class="items">Profesesionales calificados</li>
+			<ul class="ul-diferenciales">
+				<li class="items"><i class="ri-notification-2-line"></i>Atención personalizada a los clientes</li>
+
+				<li class="items"><i class="ri-user-star-line"></i>Espacio diferenciado</li>
+
+				<li class="items"><i class="ri-map-pin-line"></i>Localización</li>
+
+				<li class="items"><i class="ri-star-line"></i>Profesesionales calificados</li>
 			</ul>
 
-			<img src="./img/diferenciales.jpg" class="imagenDiferenciales" />
+
 		</div>
-	</body>
+
+    </main>
+
+
+    <footer>
+        <img src="img/logo-blanco.png">
+        <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+    </footer>
+</body>
 </html>
