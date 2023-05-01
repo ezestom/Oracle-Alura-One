@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="CSS/reset.css">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/style-productos.css">
    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
    <title>Productos - Barbería Alura</title>
 </head>
@@ -18,10 +19,16 @@
                     <li><a href="index.html"><i class="ri-home-2-line"></i>Home</a></li>
                     <li><a href="productos.html"><i class="ri-product-hunt-line"></i>Productos</a></li>
                     <li><a href="contacto.html"><i class="ri-contacts-line"></i>Contacto</a></li>
-                    <li> <a href="#"><i class="ri-user-line"></i>Usuario</a></li>
+						  <li> <a href="#"><i class="ri-user-line"></i>Usuario</a></li>
                 </ul>
             </nav>
         </div>
+		  <input type="checkbox" id="checkbox">
+		  <label for="checkbox" class="toggle">
+				<div class="bars" id="bar1"></div>
+				<div class="bars" id="bar2"></div>
+				<div class="bars" id="bar3"></div>
+		  </label>
     </header>
 
 
@@ -48,11 +55,59 @@
             </li>
         </ul>
     </main>
+    <div class="diferenciales">
+
+        <ul class="ul-diferenciales">
+            <li class="items"><i class="ri-notification-2-line"></i>Atención personalizada a los clientes</li>
+
+            <li class="items"><i class="ri-user-star-line"></i>Espacio diferenciado</li>
+
+            <li class="items"><i class="ri-map-pin-line"></i>Localización</li>
+
+            <li class="items"><i class="ri-star-line"></i>Profesesionales calificados</li>
+        </ul>
+
+
+    </div>
 
 
     <footer>
-        <img src="img/logo-blanco.png">
+        <table>
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Horario</th>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>9:00 - 19:00</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>9:00 - 19:00</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>9:00 - 19:00</td>
+              </tr>
+            </tbody>
+          
+            <tfoot>
+              <tr>
+                <td colspan="2">Consulte por feriados</td>
+              </tr>
+            </tfoot>
+          </table>
         <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+        <div>
+            <img src="img/logo-blanco.png" />
+
+        </div>
+        
     </footer>
 </body>
+<script src="js/script.js"></script>
 </html>

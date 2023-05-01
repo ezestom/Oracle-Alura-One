@@ -1,87 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="CSS/reset.css">
-   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="./css/style-contacto.css">
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-   <title>Contacto - Barbería Alura</title>
-</head>
-<body>
-    <header>
-        <h1><img src="img/logo-blanco.png"></h1>
-        <div class="caja">
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="ri-home-2-line"></i>Home</a></li>
-                    <li><a href="productos.html"><i class="ri-product-hunt-line"></i>Productos</a></li>
-                    <li><a href="contacto.html"><i class="ri-contacts-line"></i>Contacto</a></li>
-                    <li> <a href="#"><i class="ri-user-line"></i>Usuario</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/style-contacto.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+			rel="stylesheet" />
+		<title>Contacto - Barbería Alura</title>
+	</head>
+	<body>
+		<header>
+			<h1><img src="img/logo-blanco.png"></h1>
+			<div class="caja">
+				 <nav>
+					  <ul>
+							<li><a href="index.html"><i class="ri-home-2-line"></i>Home</a></li>
+							<li><a href="productos.html"><i class="ri-product-hunt-line"></i>Productos</a></li>
+							<li><a href="contacto.html"><i class="ri-contacts-line"></i>Contacto</a></li>
+							<li> <a href="#"><i class="ri-user-line"></i>Usuario</a></li>
+					  </ul>
+				 </nav>
+			</div>
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox" class="toggle">
+				 <div class="bars" id="bar1"></div>
+				 <div class="bars" id="bar2"></div>
+				 <div class="bars" id="bar3"></div>
+			</label>
+	  </header>
+
+	  <h2 class="titulo-centralizado">
+		  <i class="ri-scissors-cut-fill"></i>Barbería Alura<i
+			  class="ri-scissors-cut-line"></i>
+	  </h2>
+		<main class="contacto">
+
+			<section>
+
+				<form action="">
+					<label for="name"> Nombre Apellido</label>
+					<input
+						id="name"
+						type="text"
+						required
+						placeholder="Nombre Apellido" />
+
+					<label for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						required
+						placeholder="email@dominio.com" />
+
+					<label for="phone">Teléfono</label>
+					<input
+						type="tel"
+						name="phone"
+						id="phone"
+						required
+						placeholder="15 xxxx xxxx" />
+
+					<label class="reservar" for="date">Quiero Reservar!</label>
+					<input type="date" name="date" id="date" required />
+
+					<fieldset>
+						<legend class="contactar">
+							Como le gustaría que lo cóntactemos?
+						</legend>
+
+						<label for="texarea">Mensaje</label>
+						<textarea
+							name="texarea"
+							id="textarea"
+							required></textarea>
+
+						<label for="radio-email">
+							Email<input
+								type="radio"
+								name="contacto"
+								id="radio-email"
+						/></label>
+
+						<label for="radio-telefono">
+							Teléfono<input
+								type="radio"
+								name="contacto"
+								id="radio-telefono"
+						/></label>
+
+						<label for="radio-whatsapp">
+							Whatsapp<input
+								type="radio"
+								name="contacto"
+								id="radio-whatsapp"
+								checked
+						/></label>
+					</fieldset>
+
+					<label for=""
+						>Subscibete a nuestro Newslatter<input
+							type="checkbox"
+							checked
+					/></label>
+                    
+                    <fieldset>
+
+                        <legend class="contactar">
+                            En que horario prefiere ser atendido?
+                        </legend>
+                        <select name="" id="">
+                            <option value="">Mañana</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noche</option>
+                        </select>
+
+                    </fieldset>
 
 
-    <main>
-            
-        <section>
 
-           
-        </section>
+					<button type="submit">Enviar Formulario</button>
+				</form>
+			</section>
 
-        <section>
-            <h2 class="titulo-centralizado"><i class="ri-scissors-cut-fill"></i>Barbería Alura<i class="ri-scissors-cut-line"></i></h2>
-            <form action="">
-                <label for="name"> Nombre</label>
-                <input id="name" type="text">
-    
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-    
-                <label for="phone">Teléfono</label>
-                <input type="text" name="phone" id="phone">
-    
+			<section class="maps" >
+				<h3><i class="ri-map-pin-5-line"></i>Ubicanos en Puerto Madero</h3>
+				<p>La zona más top de Buenos Aires</p>
+				<p>..te estamos esperando...</p>
 
-                <p class="contactar">Como le gustaría que lo cóntactemos? </p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.801823324253!2d-58.36561432346964!3d-34.60917245778774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d3d284f549%3A0x4e5f2a54b0b025bb!2sOracle!5e0!3m2!1ses-419!2sar!4v1682894457769!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <label for="texarea">Mensaje</label>
-                <textarea name="texarea" id="textarea"></textarea>
+			</section>
+		</main>
+		<div class="diferenciales">
+			<ul class="ul-diferenciales">
+				<li class="items">
+					<i class="ri-notification-2-line"></i>Atención personalizada
+					a los clientes
+				</li>
 
-                <label for="radio-email"> Email<input type="radio" name="contacto" id="radio-email"></label>
-                
+				<li class="items">
+					<i class="ri-user-star-line"></i>Espacio diferenciado
+				</li>
 
-                <label for="radio-telefono"> Teléfono<input type="radio" name="contacto" id="radio-telefono"></label>
-                
+				<li class="items">
+					<i class="ri-map-pin-line"></i>Localización
+				</li>
 
-                <label for="radio-whatsapp"> Whatsapp<input type="radio" name="contacto" id="radio-whatsapp"></label>
-                
+				<li class="items">
+					<i class="ri-star-line"></i>Profesesionales calificados
+				</li>
+			</ul>
+		</div>
 
-                <label for="">Subscibete a nuestro Newslatter<input type="checkbox"></label>
-                
-                <p class="contactar">En que horario prefiere ser atendido?</p>
-                <select name="" id="">
-                    <option value="">Mañana</option>
-                    <option value="">Tarde</option>
-                    <option value="">Noche</option>
-                </select>
-                
+		<footer>
+			<table>
+				<thead>
+				  <tr>
+					 <th>Día</th>
+					 <th>Horario</th>
+				  </tr>
+				</thead>
+			 
+				<tbody>
+				  <tr>
+					 <td>Lunes</td>
+					 <td>9:00 - 19:00</td>
+				  </tr>
+				  <tr>
+					 <td>Miércoles</td>
+					 <td>9:00 - 19:00</td>
+				  </tr>
+				  <tr>
+					 <td>Viernes</td>
+					 <td>9:00 - 19:00</td>
+				  </tr>
+				</tbody>
+			 
+				<tfoot>
+				  <tr>
+					 <td colspan="2">Consulte por feriados</td>
+				  </tr>
+				</tfoot>
+			 </table>
+			<p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+			<div>
+				<img src="img/logo-blanco.png" />
 
-                <button type="submit"> Enviar Formulario</button>
-            </form>
-        </section>
-
-
-
-    </main>
-
-
-    <footer>
-        <img src="img/logo-blanco.png">
-        <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
-    </footer>
-</body>
+			</div>
+			
+		</footer>
+	</body>
+	<script src="js/script.js"></script>
 </html>
