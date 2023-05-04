@@ -7,14 +7,7 @@ main{
    background-size: cover;
    background-repeat: no-repeat;
 }
-.titulo-centralizado{
-   text-align: center;
-   font-size: 3rem;
-   font-weight: bold;
-   padding-block: 2rem;
-   justify-content: center;
-   display: flex;
-}
+
 .principal{
    max-width: 75%;
    text-align: center;
