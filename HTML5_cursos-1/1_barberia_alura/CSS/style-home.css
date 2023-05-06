@@ -9,14 +9,12 @@ main{
 }
 
 .principal{
-   max-width: 75%;
-   text-align: center;
+   max-width: 80%;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    font-weight: 500;
-   margin: 3rem 0;
 }
 .ubicacion{
    display: flex;
@@ -46,7 +44,7 @@ main{
    z-index: -1;
    border-radius: 10px;
 }
-.video{
+.ratio{
    display: flex;
    justify-content: space-around;
    border-radius: 10px;
@@ -58,21 +56,22 @@ main{
    
 }
 #mision{
-   text-align: start;
-   max-width: 50%;
-   max-height: 100%;
+   margin-top: 3rem;
+   border-radius: 10px;
    font-weight: 700;
    padding: 1rem;
-
+   border: 3px dashed white;
+   background-color: #eeee;
+   width: 100%;
+   line-height: .25rem;
 }
 #mision  p,
 #mision h3 {
    text-align: start;
    font-size: 1rem;
-   line-height: 1rem;
 }
 #mision h3{
-   font-size: 1.25rem;
+   font-size: 1.5rem;
    font-weight: bold;
 }
 
