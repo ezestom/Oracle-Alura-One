@@ -28,7 +28,7 @@ header {
 h1 img {
 	position: absolute;
 	left: 0;
-	filter:drop-shadow(0px 4px 4px #f378ff);
+	filter: drop-shadow(0px 4px 4px #f378ff);
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav a {
 	border-radius: 10px;
 	padding: 5px;
 }
-nav i{
+nav i {
 	margin-right: 5px;
 }
 
@@ -66,7 +66,7 @@ nav a:hover {
 	color: #f378ff;
 }
 nav a:active {
-	color: #088c19;
+	transform: scale(0.98);
 }
 .titulo-centralizado {
 	border-bottom: 3px dashed white;
@@ -85,26 +85,13 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
-footer > .copyright{
+footer > .copyright {
 	display: flex;
 	align-items: end;
-	padding-bottom: 1rem ;
+	padding-bottom: 1rem;
 	font-size: 1.25rem;
-}
-
-footer > table{
-	padding: 0 3rem;
-
-	
-}
-table{
-	margin:2rem;
-	text-align: center;
-}
-table, thead, tbody, tfoot, tr, td, th {
-	color: #eeeeee;
-	border: 1px solid #eeeeee;
 }
 
 .copyright {
@@ -124,16 +111,31 @@ table, thead, tbody, tfoot, tr, td, th {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
+	margin: 0;
 	padding: 1%;
+}
+
+.items a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #eeeeee;
+}
+.items a:hover {
+	color: #f378ff;
+}
+.items a:active {
+	transform: scale(0.98);
+}
+.items i {
+	padding-right: 3px;
 }
 
 /* redes buttons */
 
-
-
 /* switched */
 #checkbox {
-   position: absolute;
+	position: absolute;
 	top: -1rem;
 }
 
@@ -199,6 +201,138 @@ table, thead, tbody, tfoot, tr, td, th {
 	transform: rotate(180deg);
 }
 
+/* redes */
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 1rem;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 70px;
+  height: 70px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 70px;
+  height: 70px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 70px;
+  height: 70px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 70px;
+  height: 70px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+/* media querys */
+
 @media screen and (max-width: 641px) {
 	.productos li {
 		width: 90%;
@@ -221,13 +355,11 @@ table, thead, tbody, tfoot, tr, td, th {
 	}
 }
 
-
-
 @media screen and (max-width: 1200px) {
 	h1 > img {
 		display: none;
 	}
-	.toggle{
+	.toggle {
 		display: flex;
 		z-index: 2;
 	}
@@ -254,11 +386,14 @@ table, thead, tbody, tfoot, tr, td, th {
 		border: none;
 		font-size: 2rem;
 	}
-	nav ul li a:hover{
+	nav ul li a:hover {
 		color: #f378ff;
 		border: none;
 	}
-	.logo-footer > img{
+	.logo-footer > img {
 		display: none;
+	}
+	footer{
+		justify-content: center;
 	}
 }

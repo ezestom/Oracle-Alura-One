@@ -5,14 +5,11 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
-	align-items: center;
 	flex-wrap: wrap;
 }
 
-
-
-form,
-textarea {
+form {
+	min-width: 400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -20,14 +17,16 @@ textarea {
 	border: 2px solid #ebe8e8;
 	border-radius: 10px;
 	padding: 1rem 2rem;
-	max-width: 300px;
+	max-width: 350px;
 	margin: 0 auto;
 	margin: 1rem;
 }
-textarea {
-   width: 220px;
-   height: 100px;
+#textarea {
+	width: 332px;
+	height: 100px;
    resize: none;
+	border-radius: 5px;
+	border: solid 2px #ebe8e8;
 }
 
 /* Estilo para etiquetas */
@@ -39,13 +38,14 @@ form label {
 	margin-bottom: 1rem;
 }
 
+
 /* Estilo para entradas de texto */
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="textarea"] {
 	width: 100%;
-	padding: 0.50rem;
+	padding: .5rem;
 	margin-bottom: 1rem;
 	border-radius: 5px;
 	border: 2px solid #ebe8e8;
@@ -63,6 +63,9 @@ form button {
 	font-size: 1rem;
 	margin-top: 1rem;
 	transition: all 0.2s ease-in-out;
+}
+input#radio-email{
+	padding-left: 1rem;
 }
 
 fieldset{
@@ -90,9 +93,11 @@ form button:hover {
 	padding: 3% 0;
 	border-radius: 5px;
 	margin: 1rem 0;
+	font-size: 1rem;
 }
 
 .maps{
+	text-align: center;
 	border: 2px solid #ebe8e8;
 	padding: 3rem;
 	border-radius: 10px;
@@ -100,7 +105,7 @@ form button:hover {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin: 1rem;
+	width: 400px;
 }
 .maps h3{
 	font-size: 1.25rem;
@@ -110,5 +115,20 @@ form button:hover {
 }
 .maps p{
 	font-size: 1rem;
-	padding: 1rem;
-} 
+}
+
+table {
+	padding: 3rem;
+	margin: 2rem;
+	text-align: start;
+}
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+	border: 1px solid #eeee;
+	padding: .5rem;
+}
