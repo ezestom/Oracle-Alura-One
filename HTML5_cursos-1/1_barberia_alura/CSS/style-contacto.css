@@ -1,7 +1,8 @@
 /* Estilo para formulario */
 
-.contacto{
-	margin: 3rem 0;
+.contacto {
+	padding: 3rem 0;
+	height: auto;
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
@@ -9,7 +10,7 @@
 }
 
 form {
-	min-width: 400px;
+	min-width: 405px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -17,14 +18,14 @@ form {
 	border: 2px solid #ebe8e8;
 	border-radius: 10px;
 	padding: 1rem 2rem;
-	max-width: 350px;
 	margin: 0 auto;
 	margin: 1rem;
+	background-color: white;
 }
 #textarea {
 	width: 332px;
 	height: 100px;
-   resize: none;
+	resize: none;
 	border-radius: 5px;
 	border: solid 2px #ebe8e8;
 }
@@ -34,10 +35,9 @@ form label {
 	display: block;
 	padding-top: 2%;
 }
-#date{
+#date {
 	margin-bottom: 1rem;
 }
-
 
 /* Estilo para entradas de texto */
 form input[type="text"],
@@ -45,7 +45,7 @@ form input[type="email"],
 form input[type="tel"],
 form input[type="textarea"] {
 	width: 100%;
-	padding: .5rem;
+	padding: 0.5rem;
 	margin-bottom: 1rem;
 	border-radius: 5px;
 	border: 2px solid #ebe8e8;
@@ -64,21 +64,21 @@ form button {
 	margin-top: 1rem;
 	transition: all 0.2s ease-in-out;
 }
-input#radio-email{
-	padding-left: 1rem;
+input {
+	padding-left: 10%;
 }
 
-fieldset{
+
+fieldset {
 	text-align: center;
 	width: 100%;
-
 }
 
 form button:hover {
 	background-color: #006b8f;
 }
-.reservar{
-	background-color: #ebe8e8;
+.reservar {
+	background-color: #F5F5F5;
 	width: 100%;
 	padding: 3% 0;
 	border-radius: 5px;
@@ -87,8 +87,8 @@ form button:hover {
 }
 
 .contactar {
-   margin: 1rem 0;
-	background-color: #ebe8e8;
+	margin: 1rem 0;
+	background-color: #F5F5F5;
 	width: 100%;
 	padding: 3% 0;
 	border-radius: 5px;
@@ -96,31 +96,31 @@ form button:hover {
 	font-size: 1rem;
 }
 
-.maps{
+.maps {
 	text-align: center;
-	border: 2px solid #ebe8e8;
+	border: 2px solid #eeee;
 	padding: 3rem;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	width: 400px;
+	width: 405px;
+	background-color: white;
 }
-.maps h3{
+.maps h3 {
 	font-size: 1.25rem;
-	text-decoration: underline wavy #ebe8e8;
 	padding: 1rem;
 	font-weight: bold;
+	background-color: #F5F5F5;
+	border-radius: 10px;
 }
-.maps p{
+.maps p {
 	font-size: 1rem;
 }
 
 table {
-	padding: 3rem;
-	margin: 2rem;
-	text-align: start;
+	text-align: center;
 }
 table,
 thead,
@@ -130,5 +130,9 @@ tr,
 td,
 th {
 	border: 1px solid #eeee;
-	padding: .5rem;
+	padding: 0.5rem;
+}
+thead,
+tfoot{
+	background-color: #F5F5F5;
 }

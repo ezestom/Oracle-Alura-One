@@ -3,8 +3,8 @@ window.addEventListener('load', function () {
    const formulario = document.querySelector("nav ul");
    const main  = document.querySelector('main');
 
-   check.addEventListener('change', function () {
 
+   check.addEventListener('change', function () {
 
       if (check.checked) {
          formulario.style.top = '0';
@@ -13,8 +13,7 @@ window.addEventListener('load', function () {
          formulario.style.top = '-500px';
          main.style.filter = 'blur(0)';
       }
-      
-   })
-      
-
+   })    
 });
+
+

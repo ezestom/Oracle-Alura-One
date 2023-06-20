@@ -1,105 +1,152 @@
-main{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
 }
 
-.principal{
-   max-width: 70%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-weight: 500;
+.principal {
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
 }
-.ubicacion{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   padding: 0 2rem;
-   font-size: 1.25rem;
-   font-weight: 500;
-   margin: 2rem 0;
-   min-height: 225px;
+.ubicacion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding:  2rem 0;
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin: 2rem 0;
 }
-.ubicacion::before{
-   border: 3px dashed black;
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url(../img/diferenciales.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   opacity: 0.2;
-   z-index: -1;
+.ubicacion::before {
+	border: 3px dashed black;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.1;
+	z-index: -1;
 }
-.ratio{
-   display: flex;
-   border: 3px dashed white;
-   background-color: #eeee;
-   
-   
+
+.middle{
+	width: 100%;
+	height: auto;
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1%;
 }
-#mision{
-   margin-top: 3rem;
-   padding: 2rem;
-   border: 3px dashed white;
-   background-color: #eeee;
-   width: 100%;
-   
+.start{
+	width: 48%;
+	min-width: 375px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2%;
+	justify-content: space-between;
 }
-#mision  p,
+.end{
+	width: 48%;
+}
+.ratio {
+	border: 3px dashed white;
+	background-color: #eeee;
+	height: 50%;
+}
+.publicidad {
+	height: 50%;
+	width: 100%;
+	background-image: url(../img/diferenciales.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 75%;	
+	transition: all 0.5s ease-in-out;
+	border: 3px dashed white;
+}
+.publicidad::after{
+    content: "Recortate la barba los miércoles con 50% OFF";
+    color: #eeee;
+    font-size: 1.25rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.publicidad:hover{
+	opacity: 100%;
+	cursor: crosshair;
+}
+#mision {
+	padding: 2rem;
+	border: 3px dashed white;
+	background-color: #eeee;
+	height: 100%;
+	line-height: 2rem;
+	
+}
+#mision p,
 #mision h3 {
-   display: flex;
-   align-items: center;
-   text-align: start;
-   font-size: 1rem;   
-   margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	text-align: start;
+	font-size: 1rem;
+	margin-bottom: 0;
 }
-#mision h3{
-   padding: .75rem;
-   font-size: 1.5rem;
-   font-weight: bold;
+#mision h3 {
+	padding: 0.75rem;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .ofrecemos {
-   position: relative; /* asegura que el elemento "before" esté posicionado correctamente */
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding: 0 2rem;
-   min-height: 225px;
-   margin: 2rem 0;
- }
- 
- .ofrecemos::before {
-   border: 3px dashed black;
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url(../img/banner.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   opacity: 0.2; /* Cambia el valor de opacidad al que desees */
-   z-index: -1; /* coloca la capa detrás del contenido principal */
- }
- 
- .ofrecemos > p {
-   font-size: 1.25rem;
-   padding: 1rem;
-   color:black;
- }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+	margin: 2rem 0;
+}
 
+.ofrecemos > p {
+	font-size: 1.25rem;
+	padding: 1rem;
+	color: black;
+}
 
+@media screen and (max-width : 1230px){
+		.start{
+			width: 100%;
+		}
+		.end{
+			width: 100%;
+		}
+		.ratio{
+			margin: 0;
+		}
+		.ubicacion{
+			margin: 0;
+		}
+		.publicidad, .ratio{
+			margin: 1rem 0;
+		}
+		.principal{
+			width: 95%;
+		}
+		.ofrecemos, #mision{
+			display: none;
+		}		
+}

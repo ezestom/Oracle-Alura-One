@@ -1,5 +1,5 @@
 .productos {
-	margin: 3rem 0;
+	padding: 5% 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -7,40 +7,45 @@
 	display: flex;
 	flex-wrap: wrap;
 	cursor: pointer;
+	background-image: url(../img/Cabello_10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
 }
 
 .productos li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	text-align: center;
-	width: 300px;
-	margin: 1%;
+	width: 400px;
+	height: 400px;
+	margin: 5% 3% ;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	border: 5px solid #000000;
 	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.productos li:hover{
+	background-color: transparent;
+	transition: all 0.2s ease-in-out;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
-.productos li:hover {
-	transform: scale(1.01);
-	transition: all .1s;
-}
-.productos li:active {
-	transform: scale(1.02)
-}
-
-.productos h3 {
-	font-size: 30px;
+.productos li h3 {
+	font-size: 3rem;
 	font-weight: bold;
-}
-h2 img {
-	max-width: 100%;
 }
 
 .producto-descripcion {
-	font-size: 18px;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .producto-precio {
-	font-size: 20px;
+	font-size: 3rem;
 	font-weight: bold;
 	margin-top: 10px;
 }

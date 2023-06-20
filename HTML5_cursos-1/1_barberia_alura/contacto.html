@@ -65,7 +65,8 @@
 						id="name"
 						type="text"
 						required
-						placeholder="Nombre Apellido" />
+						placeholder="Nombre Apellido"
+						pattern="[a-zA-Z ]+" />
 
 					<label for="email">Email</label>
 					<input
@@ -81,7 +82,8 @@
 						name="phone"
 						id="phone"
 						required
-						placeholder="15 xxxx xxxx" />
+						placeholder="15 xxxx xxxx"
+						pattern="\d+" />
 
 					<label class="reservar" for="date">Quiero Reservar!</label>
 					<input type="date" name="date" id="date" required />
@@ -95,7 +97,8 @@
 						<textarea
 							name="texarea"
 							id="textarea"
-							required></textarea>
+							required>
+						</textarea>
 
 						<label for="radio-email">
 							Email<input
@@ -143,7 +146,8 @@
 
 			<section class="maps">
 				<h3>
-					<i class="ri-map-pin-5-line"></i>Ubicanos en Puerto Madero, Buenos Aires
+					<i class="ri-map-pin-5-line"></i>Ubicanos en Puerto Madero,
+					Buenos Aires
 				</h3>
 				<p>La zona más top de la ciudad</p>
 				<p>..te estamos esperando.</p>
@@ -217,7 +221,7 @@
 		</div>
 
 		<footer>
-						<div class="main">
+			<div class="main">
 				<div class="up">
 					<button class="card1">
 						<svg
@@ -285,7 +289,7 @@
 						</svg>
 					</button>
 				</div>
-			</div>			
+			</div>
 			<p class="copyright">&copy Copyright Barbería Alura - 2020</p>
 			<div class="logo-footer">
 				<img src="img/logo-blanco.png" />
