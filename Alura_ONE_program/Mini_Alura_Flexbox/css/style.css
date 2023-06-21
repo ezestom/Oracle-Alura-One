@@ -89,7 +89,7 @@ body {
 
 .rodapePrincipal {
 	background-color: #324C64;
-	padding-top: 20px;
+	padding-top: 20px 0;
 }
 
 .rodapePrincipal .subtitulo {

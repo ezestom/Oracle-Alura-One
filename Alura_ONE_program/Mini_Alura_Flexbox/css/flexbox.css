@@ -46,7 +46,8 @@
 	position: relative;
 }
 .videSobre-video {
-	width: 50%;
+	width: 100%;
+	min-height: 100%;
 	border-radius: 8px;
 }
 .videoSobre-sobre {
