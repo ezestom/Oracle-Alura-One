@@ -9,7 +9,7 @@ body {
 }
 
 .headerPrincipal {
-	background-color: #FFF;
+	background-color: #CCC;
 	padding: 20px 0;
 }
 
@@ -36,10 +36,6 @@ body {
 	border-bottom: 1px solid #9799A6;
 }
 
-.contenidoPrincipal {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
 
 .subtitulo {
 	font-weight: bold;
