@@ -1,0 +1,35 @@
+.destacados{
+   background-color: var(--background-azul-claro);
+   padding:2.5rem;
+   margin-bottom: 2rem;
+}
+.destacados__titulo{
+   color: var(--fuente-ceniza-oscuro);
+   font-weight: 700;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   margin-bottom: 2rem;
+}
+.destacados__panel1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 2rem;
+   width: 100vw;
+}
+
+
+.destacados__panel-imagen{
+   width: 100vw;
+   margin-bottom: .5rem;
+}
+.destacados__panel-texto{
+   font-weight: 700;
+   font-size: 1.2rem;
+   line-height: normal;
+}
+.destacados__boton{
+   color: var(--boton-rojo);
+   border-color: var(--boton-rojo);
+   margin: 0 auto;
+}
