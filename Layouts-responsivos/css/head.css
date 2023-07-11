@@ -19,6 +19,7 @@
 
 .head__logo {
     margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 .head__navegacion {
@@ -38,4 +39,11 @@
     color: #FFFFFF;
     text-decoration: underline wavy 2px #CCC;
 
+}
+@media screen and (min-width: 1024px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
 }

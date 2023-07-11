@@ -41,12 +41,39 @@ body {
 	max-width: 350px;
 	padding: 1rem 2rem;
 	border: var(--boton-rojo) 2px solid;
-	border-radius: 8px;
 	font-size: 1.2rem;
 	background-color: rgba(255, 0, 0, 0.1);
+	min-width: 200px;
 }
 .boton:hover {
 	background-color: var(--boton-rojo);
 	color: var(--background-blanco);
 	transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .diferenciales {
+        background-color: var(--cinza-claro);
+    }
+    .diferenciales__lista {
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
 }

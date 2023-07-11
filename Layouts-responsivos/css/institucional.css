@@ -8,6 +8,7 @@
 
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background-color: var(--background-ceniza-claro);
 }
 
 .institucional__titulo {
@@ -52,4 +53,18 @@
 .institucional__video {
     width: 100vw;
     max-width: 600px;
+}
+@media screen and (min-width: 1024px) {
+    .institucional__contenido {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+
+
+    .institucional__contacto-email {
+        display: block;
+    }
 }
