@@ -1,0 +1,19 @@
+.sobre {
+	text-align: center;
+}
+p.sobre__descripcion {
+	padding: 0 2%;
+}
+
+.sobre__titulo {
+	font-family: Pacifico, cursive;
+	color: brown;
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 2%;
+}
+.sobre__descripcion {
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #8c8888;
+}

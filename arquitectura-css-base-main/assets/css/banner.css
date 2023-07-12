@@ -1,0 +1,18 @@
+.banner__contenido {
+	background-image: url(../img/banner.png);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.banner__titulo {
+   text-align: center;
+	color: #fdfdfd;
+	font-family: Pacifico, cursive;
+	font-size: 3em;
+
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
