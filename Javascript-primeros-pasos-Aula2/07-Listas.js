@@ -18,3 +18,6 @@ console.log(ciudades2);
 ciudades2.shift(0);
 
 console.log(ciudades2);
+
+ciudades2.splice();
+console.log(ciudad2);
