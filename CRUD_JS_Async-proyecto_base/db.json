@@ -1,34 +1,29 @@
 {
-	"perfil": [
-		{
-			"id": 1,
-			"nombre": "Roberto Flores",
-			"email": "flores@alura.com"
-		},
-		{
-			"id": 2,
-			"nombre": "Ana Rodríguez",
-			"email": "ana@example.com"
-		},
-		{
-			"id": 3,
-			"nombre": "Juan Pérez",
-			"email": "juan@example.com"
-		},
-		{
-			"id": 4,
-			"nombre": "María López",
-			"email": "maria@example.com"
-		},
-		{
-			"id": 5,
-			"nombre": "Carlos García",
-			"email": "sas@example.com"
-		},
-		{
-			"id": 6,
-			"nombre": "Sara Martínez",
-			"email": "sas@example.com"
-		}
-	]
+  "perfil": [
+    {
+      "nombre": "Roberto flores",
+      "email": "flores@alura.com",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Rodríguez",
+      "email": "ana@example.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Juan Pérez Robless",
+      "email": "juan@example.com"
+    },
+    {
+      "id": 4,
+      "nombre": "María Pérez ",
+      "email": "maria@example.com"
+    },
+    {
+      "nombre": "Pérez Robles ",
+      "email": "pedro@example.com",
+      "id": 5
+    }
+  ]
 }
